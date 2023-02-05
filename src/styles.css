@@ -1,0 +1,87 @@
+/* All elements */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body of document */
+body {
+  margin: 0;
+}
+
+/* Container for body content (not nav bar) */
+.container {
+  margin: 1rem;
+  text-align: center;
+}
+
+/* Master nav bar, containing the top left and right */
+.navbar {
+  background-color: rgb(32, 164, 152);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Top left title */
+.site-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+/* Top right portion of nav bar s*/
+.nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Also links container on top right */
+.nav ul {
+  padding: 20px;
+  margin: 0;
+  list-style: none; /* Remove list style */
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
+
+/* Individual links on top right */
+.nav a {
+  color: black;
+
+  background-color: white;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  font-size: 20px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-title {
+    padding-bottom: 0;
+  }
+}

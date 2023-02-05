@@ -1,0 +1,166 @@
+/*----- HOME PAGE -----*/
+
+/* Home Page Image */
+.home-page-image {
+  width: 70%;
+  padding-top: 20px;
+}
+
+
+
+/*----- BUY PAGE -----*/
+
+/* Buy Page Background */
+.buy-page {
+  background-color: white;
+  display: inline-block;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+/* Buy Page Two-Product Container */
+/* This container groups two Buy Page product divs together */
+/* When the screen is narrow, the contents will go from being side-by-side to being stacked vertically */
+.two-element-container {
+  margin-left: 40px;
+  margin-right: 40px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/*----- ORDERS PAGE -----*/
+
+/* Orders Page Background */
+.orders-page {
+  background-color: white;
+  display: inline-block;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+
+
+/*----- BUY PAGE AND ORDERS PAGE SHARED STYLES -----*/
+
+/* Product Container with Border */
+/* This div contains the image and product caption */
+.image-and-caption-box {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /* Border of div */
+  border-style: solid;
+  border-color: rgb(230, 230, 230);
+  border-radius: 5px;
+
+  max-width: 800px;
+}
+
+/* Product and Order Description Box */
+/* Contains the Product Name, Description, Price, Status and Buy/Tracking Button */
+.product-text-box, .orders-text-box {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  flex: auto;
+  text-align: left;
+
+  /* Used to position price and buy button at the bottom*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+/*----- PRODUCT BOX, USED IN BUY AND ORDERS PAGE -----*/
+
+/* Product picture */
+.product-picture {
+  width: 100px;
+  height: 100px;
+}
+
+/* Product name */
+.product-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Product price */
+.product-price {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Price box */
+.product-price-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Shipping status */
+.product-status {
+  font-weight: 700;
+  color: darkblue;
+  text-align: center;
+}
+
+/* Buy and tracking button */
+.product-buy {
+  cursor: pointer;
+  border-style: solid;
+  user-select: none;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+/*----- MEDIA QUERIES -----*/
+
+/* Actions performed when the screen width is less than 768 pixels */
+@media (max-width: 768px) {
+
+  /* Shrink the home page image */
+  .home-page-image {
+    width: 90%;
+    padding-top: 20px;
+  }
+
+  /* Set the Buy Page products to be vertical instead of two-to-a-row */
+  /* Set the horizontal margins to 0 */
+  .two-element-container {
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  /* Needed so the text box sizes are consistent on the Buy Page */
+  .product-text-box {
+    width: 55vw;
+  }
+
+  /* Set a minimum width */
+  .image-and-caption-box {
+    min-width: 300px;
+  }
+}
+
+
