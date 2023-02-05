@@ -161,6 +161,11 @@
   .image-and-caption-box {
     min-width: 300px;
   }
+
+  /* Hide shipping status on small screens */
+  .product-status {
+    visibility: hidden;
+  }
 }
 
 
