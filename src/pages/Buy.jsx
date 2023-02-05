@@ -52,7 +52,7 @@ const Buy = () => {
       id: 5,
       src: benadryl,
       name: "Benadryl",
-      description: "Allergy Medicine, 25mg, Value Size 31.99",
+      description: "Allergy Medicine, 25mg, Value Size",
       price: "$31.99",
 
       id2: 6,
